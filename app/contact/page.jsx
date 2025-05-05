@@ -15,7 +15,7 @@ const Contact = () => {
 				</div>
 				<div className="">
 				
-					<form action="" className='md:w-[500px] h-full px-[15px] bg-gray-500/30  py-[30px] rounded-[60px]'>
+					<form action="" className='md:w-[500px] shadow-2xl h-full px-[15px] bg-gray-500/30  py-[30px] rounded-[60px]'>
 							<input type="text" className='border-white px-[23px] bg-white/15 text-white outline-none border-[1px] font-bold rounded-[30px] w-full h-[50px] mb-[20px]' placeholder='Name' />
 
 							<input type="email" className='border-white px-[23px] bg-white/15 text-white outline-none border-[1px] font-bold rounded-[30px] w-full h-[50px] mb-[20px]' placeholder='Email' />
