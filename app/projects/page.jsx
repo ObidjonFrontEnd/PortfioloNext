@@ -69,7 +69,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='DevConnector.PNG'
+								src='DevConnector.png'
 								className=' '
 							/>
 
@@ -113,7 +113,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='protfioloTailwind.PNG'
+								src='protfioloTailwind.png'
 								className='group-hover:-translate-y-[85%] duration-3000 '
 							/>
 
@@ -158,7 +158,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='protfioloTailwind.PNG'
+								src='protfioloTailwind.png'
 								className='group-hover:-translate-y-[85%] duration-3000 '
 							/>
 
@@ -243,7 +243,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='DevConnector.PNG'
+								src='DevConnector.png'
 								className=' '
 							/>
 
@@ -287,7 +287,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='protfioloTailwind.PNG'
+								src='protfioloTailwind.png'
 								className='group-hover:-translate-y-[85%] duration-3000 '
 							/>
 
@@ -332,7 +332,7 @@ const Projects = () => {
 							<div className='h-[170px] group overflow-hidden'>
 								<img
 								alt='example'
-								src='protfioloTailwind.PNG'
+								src='protfioloTailwind.png'
 								className='group-hover:-translate-y-[85%] duration-3000 '
 							/>
 
