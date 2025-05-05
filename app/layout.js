@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en' className={`${jetbrains.variable}  scroll-smooth`}>
-			<body className='bg-[#01192f]'>{children}</body>
+			<body className=''>{children}</body>
 		</html>
 	)
 }

@@ -1,19 +1,27 @@
 'use client'
+import NavLink from '@/app/hooks/Navlink'
 import useScrollDirection from '@/app/hooks/useScrollDirection'
+import useMenu from '@/app/store'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Link as ScrollLink } from 'react-scroll'
+
+
+
 const NavBar = () => {
+	const {isOpen , setIsOpen} = useMenu()
+
+	
 	const scrollDirection = useScrollDirection();
+	
 	return (
 		<nav
-			className={`h-[90px] mt-[20px] w-[95%] md:w-[70%] mx-auto 
+			className={`h-[90px] mt-[20px] w-[80%] md:w-[70%] mx-auto 
       bg-[#01192f]/60 backdrop-blur-md 
       px-[25px] flex items-center md:px-[35px] 
       rounded-[100px] shadow-2xl justify-between border border-white/10
       fixed left-0 right-0 z-50 transition-transform duration-300 ${
-				scrollDirection === 'down' ? '-translate-y-[120%]' : 'translate-y-0'
+				scrollDirection === 'down' ? 'translate-y-[120%]' : 'translate-y-0'
 			}`}
 		>
 			<div className='logo'>
@@ -30,63 +38,43 @@ const NavBar = () => {
 
 			<ul className='items-center gap-[20px] text-white hidden md:flex'>
 				<li>
-					<ScrollLink
-						to='about'
-						smooth={true}
-						duration={500}
-						spy={true}
-						offset={-70}
-						activeClass='text-[#FF8556] font-bold'
+					<NavLink
+						href='/about'
 						className='cursor-pointer '
 					>
 						About
-					</ScrollLink>
+					</NavLink>
 				</li>
-
+				
 				<li>
-					<ScrollLink
-						to='tech'
-						smooth={true}
-						duration={500}
-						spy={true}
-						offset={-70}
-						activeClass='text-[#FF8556] font-bold'
+					<NavLink
+						href='/tech'
 						className='cursor-pointer '
 					>
-						Tech Stack
-					</ScrollLink>
+						My Skills
+					</NavLink>
 				</li>
 
 				<li>
-					<ScrollLink
-						to='projects'
-						smooth={true}
-						duration={500}
-						spy={true}
-						offset={-70}
-						activeClass='text-[#FF8556] font-bold'
+					<NavLink
+						href='/projects'
 						className='cursor-pointer '
 					>
 						Projects
-					</ScrollLink>
+					</NavLink>
 				</li>
 
 				<li>
-					<ScrollLink
-						to='contact'
-						smooth={true}
-						duration={500}
-						spy={true}
-						offset={-70}
-						activeClass='text-[#FF8556] font-bold'
+					<NavLink
+						href='/contact'
 						className='cursor-pointer '
 					>
 						Contact
-					</ScrollLink>
+					</NavLink>
 				</li>
 			</ul>
 			<div className='text-white text-[50px] md:hidden'>
-				<Menu />
+				<Menu onClick={setIsOpen} />
 			</div>
 		</nav>
 	)
